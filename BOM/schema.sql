@@ -8,7 +8,7 @@ CREATE TABLE unidades_medida (
     precision_decimales SMALLINT NOT NULL DEFAULT 0 CHECK (precision_decimales >= 0 AND precision_decimales <= 6),
     activo BOOLEAN NOT NULL DEFAULT TRUE,
     created_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP
-);
+); 
 
 CREATE TABLE conversiones_uom (
     conversion_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
